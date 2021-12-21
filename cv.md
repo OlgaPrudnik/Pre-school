@@ -25,23 +25,14 @@ I am able to handle multiple tasks on a daily basis. I use a creative approach t
 
 ## Code example:
 ```
-function createRandomCircle() {
-const circle = document.createElement('div')
+function nicknameGenerator(name){
+  return (name.length<4? 'Error: Name too short' :
 
-const size = getRandomNumber(10, 60)
-const {width, height} = board.getBoundingClientRect()
-const x = getRandomNumber(0, width - size)
-const y = getRandomNumber(0, height - size)
+          /^[a-z]{2}[aeiou]/i.test(name)?
 
-circle.classList.add('circle')
-circle.style.width = `${size}px`
-circle.style.height = `${size}px`
-circle.style.top = `${y}px`
-circle.style.left = `${x}px`
-circle.style.background = `${getRandomColor()}`
-
-board.append(circle)
-}
+          name.slice(0,4) : name.slice(0,3)
+  )
+  }
 ```
 
 ## Work experience:
