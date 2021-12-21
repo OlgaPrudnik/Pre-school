@@ -3,8 +3,8 @@
 ---
 
 ## Contact me:
-* [e-mail:](olga.barannikova.92@mail.ru) 
-* LinkedIn: (https://www.linkedin.com/in/olga-prudnik-25145a217/)
+* [e-mail](olga.barannikova.92@mail.ru) 
+* [LinkedIn] (https://www.linkedin.com/in/olga-prudnik-25145a217/)
 * phone: +375296931799
 * location: Belarus
 
