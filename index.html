@@ -21,7 +21,7 @@
             <h3>Contacts</h3>
             <ul>
               <li>
-                <img src="./images/phone.svg" alt="phone" width="30" height="30">
+                <img src="./images/phone.svg" alt="Phone" width="30" height="30">
                 <p>+375(29) 693-17-99</p>
               </li>
               <li>
@@ -72,67 +72,24 @@
             <img src="./images/education.svg" alt="education" width="30" height="30">
             <h3>Education</h3>
           </div>
-          <table border="1" width="550" height="400" cellspacing="0">
-            <caption> Education</caption>
-            <tr>
-              <th rowspan="2">Educational establishments </th>
-              <th colspan="8">Education</th>
-            </tr>
-            <tr>
-                <th colspan="2">Start</th>
-                <th colspan="2">End</th>
-                <th colspan="2">Qualification</th>
-                <th colspan="2">Web-site</th>
-            </tr>
-            <tr>
-              <td align="center">"Mogilev State Musical college"</td>
-              <td colspan="2" align="center"><strong>2007</strong></td>
-              <td colspan="2" align="center"><strong>2011</strong></td>
-              <td colspan="2" align="center"><strong>Teacher of music</strong></td>
-              <td colspan="2" align="center"><strong><a href="www.muzic.mogilev.by">Mogilev State Musical college</a></strong></td>
-            </tr>
-            <tr>
-              <td align="center">"Gomel State University named after F. Scorina"</td>
-              <td colspan="2" align="center"><strong>2011</strong></td>
-              <td colspan="2" align="center"><strong>2017</strong></td>
-              <td colspan="2" align="center"><strong>Lawyer</strong></td>
-              <td colspan="2" align="center"><strong><a href="www.gsu.by">Gomel State University named after F. Scorina</a></strong></td>
-            </tr>
-          </table>
+              <p><strong>"Mogilev State Musical college"</strong></p>
+              <p>Years: 2007-2011</p>
+              <p>Specialization:Teacher of music </p>
+              <p><strong>"Gomel State University named after F. Scorina"</strong></p>
+              <p>Years: 2011-2017</p>
+              <p>Specialization: Lawyer</p>
+
         </section>
         <section class="courses">
           <div class="sub-header">
             <img src="./images/university.svg" alt="courses" width="30" height="30">
             <h3>Courses</h3>
           </div>
-          <table border="1" width="550" height="400" cellspacing="0">
-            <caption> Courses</caption>
-            <tr>
-              <th rowspan="2">Educational establishments </th>
-              <th colspan="8">Education</th>
-            </tr>
-            <tr>
-                <th colspan="2">Start</th>
-                <th colspan="2">End</th>
-                <th colspan="2">Qualification</th>
-                <th colspan="2">Web-site</th>
-            </tr>
-            <tr>
-              <td align="center">"IT-School My freedom"</td>
-              <td colspan="2" align="center"><strong>2020</strong></td>
-              <td colspan="2" align="center"><strong>2021</strong></td>
-              <td colspan="2" align="center"><strong>Frontend-developer</strong></td>
-              <td colspan="2" align="center"><strong><a href="www.myfreedom.by">"IT-School My freedom"</a></strong></td>
-            </tr>
-            <tr>
-              <td align="center">Java Script Manual</td>
-              <td colspan="2" align="center"><strong>all the time</strong></td>
-              <td colspan="2" align="center"><strong>all the time</strong></td>
-              <td colspan="2" align="center"><strong>-</strong></td>
-              <td colspan="2" align="center"><strong><a href="www.learn.javascript.ru">"learnjavascript"</a></strong></td>
-            </tr>
-            </table>
-            
+          <ul>
+              <li>"IT-School My freedom"</li>
+              <li>Java Script Manual learnjavascript.ru</li>
+              <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
+          </ul>  
         </section>
         <section class="code-example">
           <div class="sub-header">
@@ -163,19 +120,34 @@
             </pre>
           
         </section>
+        <form action="#" id="form" novalidate>
+          <fieldset>
+            <label for="comment">Leave a short message:</label>
+           <textarea  id="comment" maxlength="140" rows="5" required  title="Комментарий"  placeholder="test.email@.ru"></textarea>
+           <div class="alert">Введите ссобщение</div>
+           <button type="button"  class="comment">Проверить</button>
+          </fieldset>
+          <fieldset>
+            <label for="phone">Your phone number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="375YYXXXXXXX" required minlength="2" maxlength="12">
+            <div class="alert">Номер не верный!</div>
+            <button type="submit">Проверить</button>
+          </fieldset>
+        </form>
       </aside>
     </div>
     <footer>
       <a class="my-github" href="https://github.com/OlgaPrudnik">
-      <img class="github" src="./images/github.svg" alt="github-icon" width="26" height="26">
+      <img class="github" src="./images/github.svg" alt="github-icon" width="35" height="35">
       <p>Visit my GitHub</p>
       </a>
+      
       <a href="https://rs.school/js/">
       <img src="./images/rsschool.svg" alt="rsschool-logo" width="55" height="50">
       </a>
       <p>© 2021</p>
     </footer>
   </div>
-  script<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
