@@ -147,12 +147,8 @@ main :not(.contacts) ul {
   color: black;
 }
 
-.education a {
-  color: #0f0533;
-}
-
-.courses a {
-  color: #0f0533;
+.education p {
+  margin-left: 45px;
 }
 
 .code-example p {
@@ -160,9 +156,8 @@ main :not(.contacts) ul {
 }
 
 pre {
-  margin-left: -320px;
+  margin-left: -80px;
   margin-top: 20px;
-  padding-left: 30px;
   font-family: monospace;
   font-size: 0.9rem;
   background-color: #8492ccc7;
