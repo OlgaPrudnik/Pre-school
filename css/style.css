@@ -7,13 +7,13 @@ body {
   margin: 20px auto;
   width: 1024px;
   font-family: "Open-sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
 .gradient {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(2.5%, rgba(1, 30, 156, 0.616)), color-stop(42.42%, rgba(11, 4, 104, 0.4)), color-stop(80.67%, #0f0533));
-  background: linear-gradient(180deg, rgba(1, 30, 156, 0.616) 2.5%, rgba(11, 4, 104, 0.4) 42.42%, #0f0533 80.67%);
+  background: linear-gradient(180deg, rgba(2, 28, 146, 0.61) 2.5%, rgba(15, 6, 146, 0.37) 42.42%, #180364d8 80.67%);
 }
 
 .two-columns {
@@ -23,8 +23,8 @@ body {
 }
 
 .left-part {
-  width: 42%;
-  color: #000000;
+  width: 45%;
+  color: black;
 }
 
 .right-part {
@@ -147,21 +147,20 @@ main :not(.contacts) ul {
   color: black;
 }
 
-.education p {
+.education p{
   margin-left: 45px;
 }
-
 
 .code-example p {
   margin-left: 45px;
 }
 
 pre {
-   margin-left: -80px;
+  margin-left: -80px;
   margin-top: 20px;
   font-family: monospace;
   font-size: 0.9rem;
-  background-color: #8492ccc7;
+  background-color: #7154a100;
 }
 
 footer {
@@ -177,7 +176,7 @@ footer {
   padding: 20px;
   font-size: 0.8rem;
   color: #ffffff;
-  background-color: rgba(25, 3, 104, 0.801);
+  background-color: rgba(48, 21, 143, 0.801);
 }
 
 footer a {
@@ -210,7 +209,7 @@ label {
 }
 
 button {
-  background-color: blue;
+  background-color: rgb(41, 41, 117);
   color: white;
 }
 
