@@ -111,7 +111,7 @@ padding-bottom: 35px;
 }
 
 .button {
- width: 220px;
+width: 220px;
 height: 55px;
 text-align: center;
 background-color: #BDAE82;
@@ -132,6 +132,7 @@ text-align: center;
 color: #BDAE82;
 padding-bottom: 60px;
 }
+
 .tt-name {
 padding-top: 60px;
 }
@@ -168,8 +169,8 @@ height: 240px;
 display: inline-block;
 margin-right: 40px;
 position: relative;
-
 }
+
 .camera {
 position: absolute;
 width: 62px;
@@ -189,7 +190,6 @@ color: #FFFFFF;
 position: absolute;
 top: 20px;
 left: 20px;
-
 }
 
 .describe-cam {
@@ -205,7 +205,7 @@ left: 20px;
   left: 120px;
   top: -25px; 
   position: absolute;
-
+  
 }
 .video-title {
   position: relative;
