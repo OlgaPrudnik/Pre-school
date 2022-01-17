@@ -1,1 +1,1 @@
-Project: portfolio(landing-page)
+Project: portfolio of photographer(landing-page)
