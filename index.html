@@ -1,153 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>CV</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,400;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="/img/skills__camera (2).ico">
+	<title>Portfolio</title>
 </head>
+
 <body>
-  <div class="container gradient">
-    <div class="two-columns">
-      <div class="left-part">
-        <header>
-          <img src="./images/avatar1.jpg" alt="avatar" width="250" height="280">
-          <h1>Olga Prudnik</h1>
-          <h2>Junior Frontend Developer</h2>
-        </header>
-        <main>
-          <section class="contacts">
-            <h3>Contacts</h3>
-            <ul>
-              <li>
-                <img src="./images/email.svg" alt="email" width="25" height="25">
-                <p>olga.prudnik92@gmail.com</p>
-              </li>
-              <li>
-                <img src="./images/phone.svg" alt="Phone" width="25" height="25">
-                <p>+375(29) 693-17-99</p>
-              </li>
-              <li>
-                <img src="./images/telegram.svg" alt="telegram" width="25" height="25">
-                <p>Olga_Prudnik</p>
-              </li>
-              <li>
-                <img src="./images/linkedin.svg" alt="linkedIn" width="25" height="25">
-                <a href="https://www.linkedin.com/in/olga-prudnik-25145a217/">LinkedIn</a>
-              </li>
-            </ul>
-          </section>
-          <section class="scills">
-            <h3>Scills</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS/SCSS</li>
-              <li>JavaScript/TypeScript</li>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Git</li>
-              <li>Bootstrap</li>
-            </ul>
-          </section>
-          <section class="languages">
-            <h3>Languages</h3>
-            <ul>
-              <li>Russian - native</li>
-              <li>English - B1 in progress</li>
-            </ul>
-          </section>
-        </main>
-      </div>
-      <aside class="right-part">
-        <section class="about-myself">
-          <div class="sub-header">
-            <img src="./images/person.svg" alt="myself icon" width="30" height="30">
-            <h3>About Myself</h3>
-          </div>
-          <p>Highly ambitious and extremely motivated Junior Frontend Developer is searching for a job position.</p>
-        </section>
-        <section class="education">
-          <div class="sub-header">
-            <img src="./images/education.svg" alt="education" width="30" height="30">
-            <h3>Education</h3>
-          </div>
-              <p><strong>"Mogilev State Musical college"</strong></p>
-              <p>Years: 2007-2011</p>
-              <p>Specialization:Teacher of music </p>
-              <p><strong>"Gomel State University named after F. Scorina"</strong></p>
-              <p>Years: 2011-2017</p>
-              <p>Specialization: Lawyer</p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__row">
+					<div class="header__logo">
+						<a href="#">
+							<svg display="none">
+								<symbol id="logo" viewBox="0 0 50 40">
+									<g>
+										<path
+											d="M20.4506 0.259178C19.0919 0.696909 17.9456 1.47652 17.6601 2.15634L17.5398 2.4419L15.6561 2.43301L15.4116 1.93006C15.2253 1.54668 15.063 1.3708 14.7263 1.18701L14.2864 0.945911H11.1062C6.93498 0.945911 6.40895 1.15341 6.40895 2.80355V3.26796L5.69955 3.61478C3.08441 4.8924 1.03538 7.41602 0.225789 10.3546L0.000346207 11.1748V21.2584C0.000346207 32.2698 -0.0327188 31.5584 0.547422 33.1166C1.84798 36.6086 4.86291 39.1352 8.54916 39.8258C9.78859 40.0581 40.2114 40.0581 41.4508 39.8258C45.1371 39.1362 48.152 36.6096 49.4526 33.1166C50.0327 31.5584 49.9997 32.2698 49.9997 21.2584V11.1748L49.7832 10.4031C48.649 6.36468 45.7433 3.61182 41.6342 2.67905C41.02 2.53972 40.2134 2.50514 36.6765 2.46858L32.4532 2.42412L32.3369 2.14745C32.0504 1.46565 30.8209 0.645527 29.4663 0.233488C28.3992 -0.0915987 21.4756 -0.0718366 20.4506 0.259178ZM40.0601 5.82221C43.053 6.12555 45.3856 7.95256 46.3976 10.7874L46.6731 11.5591L46.7012 20.871C46.7332 31.5189 46.7653 31.0218 45.9236 32.7342C44.9758 34.662 43.064 36.1205 40.9288 36.5453C39.7856 36.7726 10.2114 36.7726 9.07118 36.5453C6.91594 36.1145 5.0112 34.6284 4.00923 32.5949C3.24473 31.0426 3.26677 31.4072 3.29883 20.871L3.32689 11.5591L3.63149 10.7163C4.60841 8.01679 6.9961 6.11666 9.77356 5.82912C10.9589 5.7066 38.8517 5.69968 40.0601 5.82122V5.82221ZM9.51706 6.88837C6.37889 7.34191 4.35391 9.89419 4.35391 13.398V14.6954H11.0661L11.2915 14.2369C12.2845 12.2123 14.2844 10.0167 16.4357 8.58692C17.2402 8.05236 19.3614 6.97631 19.6109 6.97631C19.669 6.97631 19.7161 6.93284 19.7161 6.87948C19.7161 6.76091 10.3457 6.76782 9.51706 6.88738V6.88837ZM30.2839 6.85478C30.2839 6.90023 30.4492 6.99509 30.6506 7.06524C33.7206 8.12943 37.462 11.4702 38.7385 14.2863L38.9249 14.6964H45.6471V13.399C45.6471 10.1284 44.1341 7.98418 41.1462 7.01683C40.5581 6.82612 30.2849 6.67395 30.2849 6.85576L30.2839 6.85478ZM24.0707 7.51779C12.6663 8.61558 7.13237 20.9748 14.0931 29.7976C21.7892 39.5512 37.8768 34.7015 38.8858 22.3236C39.5611 14.0343 32.2528 6.73126 24.0707 7.51779ZM26.6638 10.9455C33.2327 11.8753 37.3277 18.963 34.8278 25.0774C31.9482 32.1216 22.708 33.9279 17.4136 28.4804C10.3908 21.2544 16.5819 9.51871 26.6638 10.9455ZM23.8723 12.5719C17.9617 13.395 14.553 19.3474 16.8885 24.7701C19.5698 30.9942 28.5605 31.7659 32.376 26.1001C36.5512 19.9007 31.2949 11.5394 23.8723 12.5719ZM27.7168 13.9098C28.8581 14.2596 29.7118 15.0768 29.7318 15.8366C29.7779 17.5886 26.2289 17.5332 25.0416 15.7635C24.1388 14.4187 25.747 13.3051 27.7168 13.9098ZM22.701 27.2552C23.7821 27.4805 25.3923 28.4557 25.3923 28.8846C25.3923 29.8865 21.7581 29.2393 20.697 28.0486C19.9636 27.2246 20.8564 26.8708 22.701 27.2552ZM41.9128 30.9991C39.8938 31.6167 40.2846 34.3863 42.3897 34.3794C44.5309 34.3725 44.6902 31.2629 42.564 30.9734C42.3486 30.9438 42.056 30.9556 41.9128 31.0001V30.9991Z" />
+									</g>
+								</symbol>
+							</svg>
+						</a>
+						<svg class="icon">
+							<use xlink:href="#logo"></use>
+						</svg>
 
-        </section>
-        <section class="courses">
-          <div class="sub-header">
-            <img src="./images/university.svg" alt="courses" width="30" height="30">
-            <h3>Courses</h3>
-          </div>
-          <ul>
-              <li>"IT-School My freedom"</li>
-              <li>Java Script Manual learnjavascript.ru</li>
-              <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
-          </ul>  
-        </section>
-        <section class="code-example">
-          <div class="sub-header">
-            <img src="./images/example.svg" alt="code example" width="30" height="30">
-            <h3>Code example</h3>
-          </div>
-          <p> Absent vowel KATA from Codewars:
-            Your job is to figure out the index of which vowel is missing from a given string:
+					</div>
+					<div class="header__info">
+						<nav class="header__nav1">
+							<ul class="header__nav ">
+								<li class="header__link"><a href="#skills">Skills</a></li>
+								<li class="header__link"><a href="#portfolio">Portfolio</a></li>
+								<li class="header__link"><a href="#video">Video</a></li>
+								<li class="header__link"><a href="#price">Price</a></li>
+								<li class="header__link"><a href="#contacts">Contacts</a></li>
+							</ul>
+						</nav>
+						<div class="header__lang">
+							<a href="#">en</a>
+							<div>/</div>
+							<a href="#">ru</a>
+						</div>
+					<div class="burger"></div>
 
-            A has an index of 0,
-            E has an index of 1,
-            I has an index of 2,
-            O has an index of 3,
-            U has an index of 4.
-            Notes: There is no need for string validation and every sentence given will contain all vowles but one. Also, you won't need to worry about capitals.</p>
-            <pre>
-              <code>
-                function absentVowel(x){
-                  let vowels = 'aeiou';
-                
-                  for (let i in vowels) {
-                    if (x.toLowerCase().indexOf(vowels[i]) == -1) {
-                      return Number(i);
-                    }
-                  }
-                }
-              </code>
-            </pre>
-          
-        </section>
-        <form action="#" id="form" novalidate>
-          <fieldset>
-            <label for="comment">Leave a short message:</label>
-           <textarea  id="comment" maxlength="140" rows="5" required  title="Комментарий"  placeholder="test.email@.ru"></textarea>
-           <div class="alert">Введите ссобщение</div>
-           <button type="button"  class="comment">Проверить</button>
-          </fieldset>
-          <fieldset>
-            <label for="phone">Your phone number:</label>
-            <input type="tel" name="phone" id="phone" placeholder="375YYXXXXXXX" required minlength="2" maxlength="12">
-            <div class="alert">Номер не верный!</div>
-            <button type="submit">Проверить</button>
-          </fieldset>
-        </form>
-      </aside>
-    </div>
-    <footer>
-      <a class="my-github" href="https://github.com/OlgaPrudnik">
-      <img class="github" src="./images/github.svg" alt="github-icon" width="35" height="35">
-      <p>Visit my GitHub</p>
-      </a>
-      
-      <a href="https://rs.school/js/">
-      <img src="./images/rsschool.svg" alt="rsschool-logo" width="55" height="50">
-      </a>
-      <p>© 2021</p>
-    </footer>
-  </div>
-  <script src="script.js"></script>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__container container">
+					<div class="hero__row">
+						<div class="hero__info">
+							<h1>Alexa Rise</h1>
+							<div class="hero__suptext">
+								Save sincere emotions, romantic feelings and happy moments of life together with professional
+								photographer Alexa Rise
+							</div>
+							<button class="hero__button button">
+								Hire me
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="skills" id="skills">
+				<div class="skills__contaner container">
+					<div class="skills__suptitle suptitle">
+						<div class="line"></div>
+						<h2 class='section-title'>Skills</h2>
+						<div class="line"></div>
+					</div>
+					<div class="skills__body">
+						<div class="skills__maincolumn">
+							<div class="skills__column">
+								<img src="./img/skills__camera (2).svg" alt="camera">
+								<div class="column__title">
+									Digital photography
+								</div>
+								<div class="column__suptitle">
+									High-quality photos in the studio and on the nature
+								</div>
+
+							</div>
+							<div class="skills__column">
+								<img src="./img/skills__cinema.svg" alt="skills__cinema">
+								<div class="column__title">
+									Video shooting
+								</div>
+								<div class="column__suptitle">
+									Capture your moments so that they always stay with you
+								</div>
+
+							</div>
+						</div>
+						<div class="skills__maincolumn">
+							<div class="skills__column">
+								<img src="./img/skills__image (2).svg" alt="camera">
+								<div class="column__title">
+									Retouch
+								</div>
+								<div class="column__suptitle">
+									I strive to make photography surpass reality
+								</div>
+
+							</div>
+							<div class="skills__column">
+								<img src="./img/skills__voice.svg" alt="camera">
+								<div class="column__title">
+									Audio
+								</div>
+								<div class="column__suptitle">
+									Professional sounds recording for video, advertising, portfolio
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<section class="portfolio" id="portfolio">
+				<div class="portfolio__container container">
+					<div class="portolio__suptitle suptitle">
+						<div class="line"></div>
+						<h2 class='section-title'>Portfolio</h2>
+						<div class="line"></div>
+					</div>
+					<div class="portfolio__body">
+						<div class="portfolio__main">
+							<button class="portfolio__season ">
+								Winter
+							</button>
+							<button class="portfolio__season ">
+								Spring
+							</button>
+						</div>
+						<div class="portfolio__main">
+							<button class="portfolio__season ">
+								Summer
+							</button>
+							<button class="portfolio__season ">
+								Autumn
+							</button>
+						</div>
+					</div>
+					<div class="portfolio__galleria">
+						<div class="portfolio__photo">
+							<img src="./img/portfolio01.jpg" alt="photo01">
+						</div>
+						<div class="portfolio__photo">
+							<img src="./img/portfolio02.jpg" alt="photo02">
+						</div>
+						<div class="portfolio__photo">
+							<img src="./img/portfolio03.jpg" alt="photo03">
+						</div>
+						<div class="portfolio__photo">
+							<img src="./img/portfolio04.jpg" alt="photo04">
+						</div>
+						<div class="portfolio__photo">
+							<img src="./img/portfolio05.jpg" alt="photo05">
+						</div>
+						<div class="portfolio__photo">
+							<img src="./img/portfolio06.jpg" alt="photo06">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video" id="video">
+				<div class="video__container container">
+					<div class="video__suptitle suptitle">
+						<div class="line"></div>
+						<h2 class='section-title'>Video</h2>
+						<div class="line"></div>
+					</div>
+					<div class="video__row">
+						<img src="img/video-player.jpg" alt="">
+						<svg class="icon__video">
+							<use xlink:href="sprite.svg#video__play"></use>
+						</svg>
+
+					</div>
+				</div>
+			</section>
+			<section class="price" id="price">
+				<div class="price__container container">
+					<div class="price__suptitle suptitle">
+						<div class="line"></div>
+						<h2 class='section-title'>Price</h2>
+						<div class="line"></div>
+					</div>
+					<div class="price__row">
+						<div class="price__column">
+							<div class="price__item">
+								<div class="price__title">Standart</div>
+								<div class="price__price">500$</div>
+								<div class="prices__suptitle">
+									<div class="price1">One location</div>
+									<div class="price2">120 photos in color</div>
+									<div class="price3">12 photos in retouch</div>
+									<div class="price4">Readiness 2-3 weeks</div>
+									<div class="price5">Make up, visage</div>
+								</div>
+								<button class="price__button button">Order shooting</button>
+							</div>
+						</div>
+						<div class="price__column">
+							<div class="price__item">
+								<div class="price__title">Premium</div>
+								<div class="price__price">700$</div>
+								<div class="prices__suptitle">
+									<div class="price1">One or two location</div>
+									<div class="price2">200 photos in color</div>
+									<div class="price3">20 photos in retouch</div>
+									<div class="price4">Readiness 1-2 weeks</div>
+									<div class="price2">200 photos in color</div>
+									<div class="price3">20 photos in retouch</div>
+									<div class="price4">Readiness 1-2 weeks</div>
+									<div class="price5">Make up, visage</div>
+								</div>
+
+								<button class="price__button button">Order shooting</button>
+							</div>
+						</div>
+						<div class="price__column">
+							<div class="price__item">
+								<div class="price__title">Gold</div>
+								<div class="price__price">1000$</div>
+								<div class="prices__suptitle">
+									<div class="price1">There location</div>
+									<div class="price2">300 photos in color</div>
+									<div class="price3">50 photos in retouch</div>
+									<div class="price4">Readiness 1 weeks</div>
+									<div class="price5">Make up, visage</div>
+								</div>
+								<button class="price__button button">Order shooting</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts" id="contacts">
+				<div class="contacts__container container">
+					<div class="contacts__row">
+						<div class="contacts__body">`
+							<h2 class="contacts__title">
+								Contact me
+							</h2>
+							<form action="#" class="contacts__form">
+								<input type="Email" placeholder="E-mail" class="contacts__text">
+								<input type="tel" placeholder="Phone" class="contacts__text">
+								<input type="text" placeholder="Message" cols = "30" rows ="2" class="contacts__message">
+							</form>
+							<button class="contacts__button button">Send message</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row">
+					<div class="footer__info">
+						<div class="footer__dogs">
+							<a href="#"><img src="./img/footer__dogs.svg" alt="@"></a>
+						</div>
+						<div class="footer__data">2022</div>
+						<div class="footer__github">
+							<a href="#">github</a>
+						</div>
+					</div>
+					<div class="footer__school">Rolling Scopes School</div>
+					<div class="footer__social">
+						<a href="#">
+							<svg class="footer__icon">
+								<use xlink:href="sprite.svg#instagram"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg class="footer__icon">
+								<use xlink:href="sprite.svg#fc"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg class="footer__icon">
+								<use xlink:href="sprite.svg#tw"></use>
+							</svg>
+						</a>
+						<a href="#">
+							<svg class="footer__icon">
+								<use xlink:href="sprite.svg#sp"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="index.js"></script>
 </body>
+
 </html>
