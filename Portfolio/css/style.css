@@ -1,26 +1,4 @@
 
-@font-face {
-  font-family: "Inter";
-  src: url(./fonts/Inter/Inter-Regular.ttf);
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url(./fonts/Inter/Inter-Bold.ttf);
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Merriweather";
-  src: url(./fonts/Merriweather/Merriweather-Bold.ttf);
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  
-}
 * {
 	padding: 0;
 	margin: 0;
@@ -101,14 +79,13 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	font-family: Inter;
+	font-family: "Inter";
 
 }
 .wrapper {
 	background-color: black;
 	display: flex;
 	flex-direction: column;
-
 	min-height: 100%;
 	overflow: hidden;
 }
@@ -125,14 +102,13 @@ body {
 }
 .suptitle {
 	margin: 100px 0px 60px 0px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 40px;
 	line-height: 80px;
 	font-weight: 700;
-	font-family: Merriweather;
+	font-family: "Merriweather";
 	color: #bdae82;
 }
 @media (max-width: 768px){
@@ -150,25 +126,21 @@ body {
 }
 @media (max-width: 768px){
 	.line {
-		width: 182PX;
-		
+		width: 182PX;	
 	}
 }
+
 
 .button {
 	background-color: #bdae82;
 	width: 220px;
 	height: 55px;
-
 	font-size: 20px;
 	line-height: 40px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	margin-top: 25px;
-
 	transition: color 0 0.3s linear;
 }
 .button:hover {
@@ -190,7 +162,7 @@ body {
 	display: none;
 	width: 50px;
 	height: 50px;
-	background: url(/img/burger-menu.svg) no-repeat center;
+	background: url(../img/burger-menu.svg) no-repeat center;
 	background-size: contain;
 	transition: background 0.3s linear;
 }
@@ -259,7 +231,7 @@ body {
 		display: block;
 		width: 50px;
 		height: 50px;
-		background: url(/img/burger-menu.svg) no-repeat center;
+		background: url(../img/burger-menu.svg) no-repeat center;
 		background-size: contain;
 		transition: background 0.3s linear;
 		position: relative;
@@ -267,7 +239,7 @@ body {
 	}
 	.burger-active{
 	
-		background: url(/img/burger-menu-cross.svg) no-repeat center;
+		background: url(../img/burger-menu-cross.svg) no-repeat center;
 		background-size: contain;
 	}
 	.header__nav{
@@ -290,16 +262,13 @@ body {
 		background-color: black;
 		z-index: 3;
 		font-size: 30px;
-		line-height: 60px;
-		
+		line-height: 60px;	
 		padding: 15% 0 0 20%;
-		
-
 	}
+
 	.header__lang{
 		margin: 0 20px 0 0;
 	}
-	
 	
 }
 
@@ -333,7 +302,7 @@ body {
 		display: block;
 		width: 50px;
 		height: 50px;
-		background: url(/img/burger-menu.svg) no-repeat center;
+		background: url(../img/burger-menu.svg) no-repeat center;
 		background-size: contain;
 		transition: background 0.3s linear;
 		position: relative;
@@ -341,7 +310,7 @@ body {
 	}
 	.burger-active{
 	
-		background: url(/img/burger-menu-cross.svg) no-repeat center;
+		background: url(../img/burger-menu-cross.svg) no-repeat center;
 		background-size: contain;
 	}
 	.header__nav{
@@ -370,8 +339,6 @@ body {
 	.header__lang{
 		margin: 0 20px 0 0;
 	}
-	
-	
 }
 /* ===============================HeRo======================= */
 .hero__row {
@@ -385,7 +352,7 @@ body {
 	padding: 250px 0 320px 80px;
 }
 .hero__info h1 {
-	font-family: Merriweather;
+	font-family: "Merriweather";
 	font-size: 60px;
 	line-height: 120px;
 	font-weight: 700;
@@ -408,11 +375,11 @@ body {
 		display: flex;
 		flex-direction: column;
 		width: 450px;
-		font-family: Inter;
+		font-family: "Inter";
 		padding: 168px 0 152px 60px;
 	}
 	.hero__info h1 {
-		font-family: Merriweather;
+		font-family: "Merriweather";
 		font-size: 32px;
 		line-height: 64px;
 		font-weight: 400;
@@ -421,15 +388,13 @@ body {
 	.hero__suptext {
 		font-size: 20px;
 		line-height: 24px;
-		color: #ffffff;
-	
+		color: #fff;
 		margin: 20px 0 60px;
 	}
 }
 @media (max-width: 500px){
 	.hero__info {
 		padding: 168px 0 152px 20px;
-		
 		width: 300px;
 		
 }
@@ -444,7 +409,6 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	color: #ffffff;
-
 	margin: 10px 0 30px;
 }
 }
@@ -530,7 +494,6 @@ body {
 	line-height: 40px;
 	color: #bdae82;
 	background-color: black;
-
 	transition: color 0.4s ease;
 }
 .portfolio__season:hover {
@@ -549,6 +512,10 @@ body {
 }
 .portfolio__photo {
 	padding: 10px 10px;
+}
+.active.portfolioBtn {
+  background-color: #bdae82;
+  color: #fff;
 }
 
 @media (max-width: 500px){
@@ -611,7 +578,7 @@ body {
 }
 
 .price__title {
-	font-family: Merriweather;
+	font-family: "Merriweather";
 	font-size: 28px;
 	line-height: 56px;
 	font-weight: 700;
@@ -620,7 +587,7 @@ body {
 }
 
 .price__price {
-	font-family: Merriweather;
+	font-family: "Merriweather";
 	font-size: 24px;
 	line-height: 48px;
 	font-weight: 700;
@@ -677,7 +644,7 @@ body {
 	padding-left: 15px;
 }
 .contacts__title {
-	font-family: Merriweather;
+	font-family: "Merriweather";
 	font-size: 40px;
 	line-height: 80px;
 	font-weight: 700;
@@ -701,7 +668,6 @@ body {
 	height: 100px;
 	margin-bottom: 13px;
 	width: 450px;
-
 	border: 2px solid #bdae82;
 	font-size: 20px;
 	line-height: 40px;
@@ -747,12 +713,8 @@ svg path {
 		width: 280px;
 	
 	}
-	.contacts__message {
-		
-		
+	.contacts__message {	
 		width: 280px;
-	
-		
 	}
 }
 
