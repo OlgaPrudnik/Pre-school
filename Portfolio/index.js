@@ -33,3 +33,22 @@ const changeImage = function changeImage(event) {
 };
 
 portfolioBtns.addEventListener("click", changeImage);
+
+import i18Obj from "./translator.js";
+
+const ruLang = document.querySelector(".ru");
+const enLang = document.querySelector(".en");
+
+function getTranslate(lang) {
+  const language = document.querySelectorAll("[data-i18]");
+  language.forEach((elem) => {
+    elem.textContent = i18Obj[lang][elem.dataset.i18];
+  });
+}
+
+ruLang.addEventListener("click", () => {
+  getTranslate("ru");
+});
+enLang.addEventListener("click", () => {
+  getTranslate("en");
+});
