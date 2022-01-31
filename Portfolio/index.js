@@ -1,7 +1,3 @@
-console.log("ругается на ссылки и не придерживался perfectPixel ")
-
-
-
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.header__nav')
 const ul = document.querySelector(".header__nav")
@@ -19,3 +15,21 @@ ul.addEventListener('click', (event) => {
 
 console.log(event.target)
 })
+const portfolioBtns = document.querySelector(".portfolio__main");
+const portfolioBtn = document.querySelectorAll(".portfolioBtn");
+const portfolioImages = document.querySelectorAll(".image");
+
+const changeImage = function changeImage(event) {
+  if (event.target.classList.contains("portfolioBtn")) {
+    portfolioImages.forEach(
+      (img, index) =>
+        (img.src = `../img/${event.target.dataset.season}/${
+          index + 1
+        }.jpg`)
+    );
+    portfolioBtn.forEach((button) => button.classList.remove("active"));
+    event.target.classList.add("active");
+  }
+};
+
+portfolioBtns.addEventListener("click", changeImage);
