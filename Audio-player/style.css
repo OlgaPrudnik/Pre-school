@@ -1,0 +1,207 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background-image: url(./assets/img/listening.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrapper .material-icons {
+  width: 30px;
+  cursor: pointer;
+}
+.wrapper {
+  width: 380px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 6px 15px 1px;
+  border-radius: 15px;
+  padding: 25px 30px;
+}
+.top-bar, .progress-area .timer,
+ .controls, .music-list .header, .music-list li {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.top-bar span {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.788)
+}
+.img-area {
+  height: 256px;
+  width: 100%;
+  margin-top: 25px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px 0.5px;
+}
+.img-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.song-details {
+  text-align: center;
+  margin: 10px 0;
+  margin: 30px 0;
+  color: rgba(0, 0, 0, 0.788)
+}
+.song-details .name {
+  font-size: 21px;
+}
+.song-details .artist {
+  opacity: 0.9;
+  font-size: 18px;
+}
+.progress-area {
+  height: 6px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.progress-area .progress-bar {
+  height: inherit;
+  width: 50%;
+  position: relative;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgb(248, 188, 198) 0%, rgb(255, 139, 255) 100%);
+}
+.progress-bar::before {
+content: "";
+position: absolute;
+height: 12px;
+width: 12px;
+background-color: #000;
+border-radius: inherit; 
+top: 50%;
+transform: translateY(-50%);
+background: inherit;
+opacity: 0;
+transition: opacity 0.2s ease;
+}
+.progress-area:hover .progress-bar::before{
+opacity: 1;
+}
+.progress-area .timer {
+margin-top: 2px
+}
+.timer span {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.788);
+}
+.controls {
+margin: 40px 0 5px 0;
+}
+.controls img {
+  user-select: none;
+  background: linear-gradient(rgb(248, 188, 198) 0%, rgb(255, 139, 255) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+.controls #prev {
+  width: 43px;
+  margin-right: -13px;
+}
+.controls #next {
+  width: 43px;
+  margin-left: -13px;
+}
+.controls .play-pause {
+  width: 54px;
+  height: 54px;
+  background: linear-gradient(rgb(255, 255, 255) 0%, rgb(218, 214, 218) 100%);
+  box-shadow: 0px 0px 5px pink;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-pause::before{
+  content: "";
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  border-radius: inherit;
+  background: linear-gradient(rgb(248, 188, 198) 0%, rgb(255, 139, 255) 100%);
+}
+.play-pause img {
+  text-align: center;
+  border-radius: inherit;
+  background: inherit;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+.music-list {
+  position: absolute;
+  left: 0;
+  bottom: -55%;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
+  background: #fff;
+  transition: all 0.14s ease-out;
+}
+.music-list.show {
+  bottom: 0;
+  opacity: 1;
+  pointer-events: auto
+  
+}
+.music-list .header .row {
+display: flex;
+align-items: center;
+font-size: 19px;
+color:rgba(0, 0, 0, 0.788);
+}
+.header .row span {
+margin-left: 5px;
+}
+.header #close {
+  font-size: 22px;
+  color:rgba(0, 0, 0, 0.788);
+}
+.music-list ul {
+  margin: 10px 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.music-list ul::-webkit-scrollbar{
+  width: 0px;
+}
+.music-list ul li {
+  cursor: pointer;
+  list-style: none;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  color:rgba(0, 0, 0, 0.788);
+  border-bottom: 1px solid #e5e5e5;
+}
+.music-list ul li:last-child {
+  border-bottom: 0px;
+}
+.music-list ul li .row span {
+  font-size: 17px;
+}
+ul li .row p {
+opacity: 0.9;
+}
+ul li .audio-duration {
+  font-size: 16px;
+}
+
