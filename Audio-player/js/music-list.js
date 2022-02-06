@@ -34,5 +34,5 @@ let allMusic = [
     artist: "NCS Release",
     img: "music-6",
     src: "music-6"
-  },
+  }
 ];
