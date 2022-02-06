@@ -5,95 +5,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Audio-player</title>
-
 </head>
 <body>
-  
-
   <div class="wrapper">
     <div class="top-bar">
-      <img src="./assets/svg/expand.png" alt="expand_more" class="material-icons">
+      <i class="material-icons">expand_more</i>
       <span>Now Playing</span>
-      <img src="./assets/svg/horiz.png" alt="more_horiz" class="material-icons">
+      <i class="material-icons">more_horiz</i>
     </div>
     <div class="img-area">
-      <img src="./assets/img/guitar.jpg" alt="cover-avatar">
+      <img src="" alt="cover-photo">
     </div>
     <div class="song-details">
-      <p class="name">Beyonce - Don't hurt yourself</p>
-      <p class="artist">Beyonce </p>
+      <p class="name"></p>
+      <p class="artist"></p>
     </div>
     <div class="progress-area">
-      <div class="progress-bar"></div>
-      <div class="timer">
-        <span class="current">0:20</span>
-        <span class="current">3:53</span>
+      <div class="progress-bar">
+        <audio id="main-audio" src=""></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time">0:00</span>
+        <span class="max-duration">0:00</span>
       </div>
     </div>
     <div class="controls">
-      <img src="./assets/svg/repeat.png" alt="repeat" id="repeat-plist" class="material-icons">
-       <img src="./assets/svg/backward.png" alt="skip_previous" id="prev" class="material-icons">
+      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+      <i id="prev" class="material-icons">skip_previous</i>
       <div class="play-pause">
-        <img src="./assets/svg/play.png" alt="play_arrow" class="material-icons" id="play">
+        <i class="material-icons play">play_arrow</i>
       </div>
-       <img src="./assets/svg/forward.png" alt="skip_next" id="next" class="material-icons">
-       <img src="./assets/svg/more.png" alt="queue_music" id="more-music" class="material-icons">
+      <i id="next" class="material-icons">skip_next</i>
+      <i id="more-music" class="material-icons">queue_music</i>
     </div>
     <div class="music-list">
       <div class="header">
         <div class="row">
-          <img src="./assets/svg/more.png" alt="queue_music" id="more-music" class="material-icons">
-          <span>Music list</span>  
+          <i class= "list material-icons">queue_music</i>
+          <span>Music list</span>
         </div>
-        <span id="close">X</span>
+        <i id="close" class="material-icons">close</i>
       </div>
-    <ul>
-      <li>
-        <div class="row">
-          <span>Unknown - Dont start now</span>
-          <p>Audio Library</p>
-        </div>
-        <span class="audio-duration">3:40</span>
-      </li>
-      <li>
-        <div class="row">
-          <span>Unknown - Dont start now</span>
-          <p>Audio Library</p>
-        </div>
-        <span class="audio-duration">3:40</span>
-      </li>
-      <li>
-        <div class="row">
-          <span>Unknown - Dont start now</span>
-          <p>Audio Library</p>
-        </div>
-        <span class="audio-duration">3:40</span>
-      </li>
-      <li>
-        <div class="row">
-          <span>Unknown - Dont start now</span>
-          <p>Audio Library</p>
-        </div>
-        <span class="audio-duration">3:40</span>
-      </li>
-      <li>
-        <div class="row">
-          <span>Unknown - Dont start now</span>
-          <p>Audio Library</p>
-        </div>
-        <span class="audio-duration">3:40</span>
-      </li>
-      <li>
-        <div class="row">
-          <span>Unknown - Dont start now</span>
-          <p>Audio Library</p>
-        </div>
-        <span class="audio-duration">3:40</span>
-      </li>
-    </ul>
+      <ul>
+        <!-- here li list are coming from js -->
+      </ul>
     </div>
   </div>
-<script src="script.js"></script>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-github">
+            <p class ="footer-copyright">&copy;</p>
+            <p class="footer-year">2022</p>
+            <a class="footer-link" href="https://github.com/OlgaPrudnik" target="_blank">github</a>
+        </div>
+       <div class="rs">
+        <p class="rs"><a class="footer-link" href="https://rs.school/js-stage0/" target="_blank">Rolling Scopes School</a></p>
+       </div>
+      </div>
+</footer>
+
+
+  <script src="./js/music-list.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
