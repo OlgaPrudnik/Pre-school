@@ -2,4 +2,4 @@
 - https://olgaprudnik.github.io/rsschool-cv/
 - https://olgaprudnik.github.io/rsschool-cv/Portfolio
 - https://olgaprudnik.github.io/rsschool-cv/Audio-player
-- https://olgaprudnik.github.io/rsschool-cv/Image Gallery
+- https://olgaprudnik.github.io/rsschool-cv/Image-gallery
